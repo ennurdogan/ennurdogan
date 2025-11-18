@@ -1,16 +1,58 @@
-## Hi there 👋
 
-<!--
-**ennurdogan/ennurdogan** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<!DOCTYPE html>
+<html lang="tr">
 
-Here are some ideas to get you started:
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ENNUR DOGAN</title>
+</head>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<body>
+    <header>
+        <div>
+            <h1>Lab Görevleri</h1>
+        </div>
+    </header>
+
+    <main>
+        <nav>
+            <ul>
+                <li>
+                    <strong>Hafta 4</strong>
+                    <ul>
+                        <li><a href="hafta4/Form/form.html">Form</a></li>
+                        <li><a href="hafta4/Test/test.html">Test</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <strong>Hafta 5</strong>
+                    <ul>
+                        <li><a href="hafta5/inlinecss/inlinecss.html">Inline Css</a></li>
+                        <li><a href="hafta5/internalcss/internalcss.html">Internal Css</a></li>
+                        <li><a href="hafta5/externalcss/externalcss.html">External Css</a></li>
+                        <li><a href="hafta5/daireler/daireler.html">Daireler</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Hafta 7</strong>
+                    <ul>
+                        <li><a href="hafta7/center.html">Animasyon</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <strong>Hafta 8</strong>
+                    <ul>
+                        <li><a href="hafta8/bootstrap.html">Bootstrap</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </main>
+</body>
+
+</html>
+
+
