@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8">
+    <title>Haftalık Ders Programı</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6ede7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            max-width: 800px;
+        }
+
+        caption {
+            caption-side: top;
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #a00;
+        }
+
+        th, td {
+            border: 2px solid #a00; /* kırmızı kenarlık */
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f28c8c; /* kırmızı ton */
+            color: white;
+        }
+
+        tr:nth-child(even) td {
+            background-color: #fdd; /* açık kırmızı satırlar */
+        }
+
+        tr:nth-child(odd) td {
+            background-color: #ffcfcf; /* biraz farklı kırmızı ton */
+        }
+
+        .saat {
+            font-weight: bold;
+            background-color: #e06c6c; /* saat sütunu kırmızı ton */
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Haftalık Ders Programı</caption>
+
+        <tr class="baslik">
+            <th>Saat</th>
+            <th>Pazartesi</th>
+            <th>Salı</th>
+            <th>Çarşamba</th>
+            <th>Perşembe</th>
+            <th>Cuma</th>
+        </tr>
+
+        <tr>
+            <td class="saat">08:40 - 10:30</td>
+            <td>BTE311</td>
+            <td>BTE311</
