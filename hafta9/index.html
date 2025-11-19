@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gezilecek Yerler - Ennur Doğan</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    flex: 1 1 100%; /* XS */
+    max-width: 400px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .card h3 {
+    margin: 10px 0;
+    font-size: 1rem;
+  }
+
+  /* Responsive ayarlar */
+  @media (min-width: 576px) {
+    .card {
+      flex: 1 1 calc(50% - 15px); /* SM: 2 yan yana */
+    }
+  }
+
+  @media (min-width: 768px) {
+    .card {
+      flex: 1 1 calc(33.33% - 15px); /* MD: 3 yan yana */
+    }
+  }
+
+  @media (min-width: 992px) {
+    .card {
+      flex: 1 1 calc(16.66% - 15px); /* LG: 6 yan yana */
+    }
+  }
+</style>
+</head>
+<body>
+
+<h1>Gezilecek Yerler - Ennur Doğan</h1>
+
+<div class="container">
+  <div class="card">
+    <img src="https://source.unsplash.com/400x200/?paris" alt="Paris">
+    <h3>Paris</h3>
+  </div>
+  <div class="card">
+    <img src="https://source.unsplash.com/400x200/?london" alt="Londra">
+    <h3>Londra</h3>
+  </div>
+  <div class="card">
+    <img src="https://source.unsplash.com/400x200/?rome" alt="Roma">
+    <h3>Roma</h3>
+  </div>
+  <div class="card">
+    <img src="https://source.unsplash.com/400x200/?newyork" alt="New York">
+    <h3>New York</h3>
+  </div>
+  <div class="card">
+    <img src="https://source.unsplash.com/400x200/?tokyo" alt="Tokyo">
+    <h3>Tokyo</h3>
+  </div>
+  <div class="card">
+    <img src="https://source.unsplash.com/400x200/?barcelona" alt="Barcelona">
+    <h3>Barcelona</h3>
+  </div>
+  <div class="card">
+    <img src="https://source.unsplash.com/400x200/?dubai" alt="Dubai">
+    <h3>Dubai</h3>
+  </div>
+  <div class="card">
+    <img src="https://source.unsplash.com/400x200/?sydney" alt="Sydney">
+    <h3>Sydney</h3>
+  </div>
+  <div class="card">
+    <img src="https://source.unsplash.com/400x200/?istanbul" alt="İstanbul">
+    <h3>İstanbul</h3>
+  </div>
+  <div class="card">
+    <img src="https://source.unsplash.com/400x200/?cairo" alt="Kahire">
+    <h3>Kahire</h3>
+  </div>
+  <div class="card">
+    <img src="https://source.unsplash.com/400x200/?moscow" alt="Moskova">
+    <h3>Moskova</h3>
+  </div>
+  <div class="card">
+    <img src="https://source.unsplash.com/400x200/?rio" alt="Rio de Janeiro">
+    <h3>Rio de Janeiro</h3>
+  </div>
+</div>
+
+</body>
+</html>
