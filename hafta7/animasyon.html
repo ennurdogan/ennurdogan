@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BTE311 Basit Animasyon</title>
+<style>
+body {
+  background: #f6ede7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+  font-family: 'Segoe UI Emoji', 'Arial', sans-serif;
+  margin: 0;
+}
+
+/* Genel top stili */
+.ball {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  position: relative;
+}
+
+/* Yukarı Aşağı Giden */
+.bounce {
+  animation: upDown 2s ease-in-out infinite alternate;
+}
+@keyframes upDown {
+  from { top: 0; }
+  to { top: 100px; }
+}
+
+/* Sağa Sola Giden */
+.leftRight {
+  animation: moveLR 3s ease-in-out infinite alternate;
+}
+@keyframes moveLR {
+  from { left: 0; }
+  to { left: 150px; }
+}
+
+/* Dönen */
+.spin {
+  animation: rotate 4s linear infinite;
+}
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+</style>
+</head>
+<body>
+
+<div class="ball bounce">😀</div>
+<div class="ball leftRight">😎</div>
+<div class="ball spin">😉</div>
+<div class="ball bounce">😍</div>
+<div class="ball leftRight">😇</div>
+
+</body>
+</html>

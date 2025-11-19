@@ -1,0 +1,25 @@
+caption {
+            caption-side: top;
+            padding: 12px;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        .baslik {
+            background-color: red;
+            color: white;
+        }
+
+        .hucre {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        .saat {
+            text-align: center;
+
+        }
+
+        .satir {
+            background-color: white;
+        }
