@@ -8,14 +8,13 @@
 
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f8dfe8; /* toz pembe */
+            font-family: "Segoe UI", Arial, sans-serif;
+            background-color: #f8dfe8;
             margin: 0;
             padding: 0;
 
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
 
             min-height: 100vh;
@@ -23,12 +22,29 @@
         }
 
         header h1 {
-            color: #a4004f; /* koyu pembe */
-            font-size: 36px;
-            margin-bottom: 20px;
+            color: #a4004f;
+            font-size: 40px;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            border-bottom: 3px solid #a4004f;
+            padding-bottom: 10px;
+            width: 280px;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            width: 100%;
+            margin-top: 15px;
         }
 
         nav ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;  
             list-style: none;
             padding: 0;
             margin: 0;
@@ -36,15 +52,21 @@
 
         nav ul > li {
             background: white;
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 12px;
-            width: 280px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            padding: 18px;
+            margin: 12px 0;
+            border-radius: 15px;
+            width: 320px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: 0.25s ease;
+        }
+
+        nav ul > li:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 14px rgba(0,0,0,0.15);
         }
 
         nav strong {
-            font-size: 20px;
+            font-size: 22px;
             color: #a4004f;
         }
 
@@ -52,18 +74,19 @@
             text-decoration: none;
             color: #333;
             font-weight: bold;
-        }
-
-        nav li ul {
-            margin-top: 8px;
-        }
-
-        nav li ul li {
-            margin: 6px 0;
+            transition: 0.2s;
         }
 
         nav a:hover {
             color: #a4004f;
+        }
+
+        nav li ul {
+            margin-top: 10px;
+        }
+
+        nav li ul li {
+            margin: 8px 0;
         }
     </style>
 
