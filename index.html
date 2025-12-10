@@ -1,148 +1,69 @@
+
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Manzara</title>
-
-<style>
-  body {
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-    transition: background 0.5s;
-    font-family: Arial;
-  }
-
-  /* Daire */
-  #circle {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    background: #fff;
-    margin: 0 auto 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border: 4px solid #fff;
-  }
-
-  /* 3 kutu container */
-  .box-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-  }
-
-  /* Her kutu */
-  .box {
-    width: 180px;
-    height: 130px;
-    background: #f58634;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    flex-direction: column;
-  }
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  /* Butonlar */
-  .btns {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
-</style>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ZEKI ARDA AKIN</title>
 </head>
+
 <body>
+    <header>
+        <div>
+            <h1>Lab Görevleri</h1>
+        </div>
+    </header>
 
-<!-- RASTGELE SEÇİLEN DAİRE RESMİ -->
-<div id="circle">
-  <img id="circleImg" src="" />
-</div>
+    <main>
+        <nav>
+            <ul>
+                <li>
+                    <strong>Hafta 4</strong>
+                    <ul>
+                        <li><a href="hafta4/Form/form.html">Form</a></li>
+                        <li><a href="hafta4/Test/test.html">Test</a></li>
+                    </ul>
+                </li>
 
-<!-- 3 RESİM KUTUSU -->
-<div class="box-container">
+                <li>
+                    <strong>Hafta 5</strong>
+                    <ul>
+                        <li><a href="hafta5/inlinecss/inlinecss.html">Inline Css</a></li>
+                        <li><a href="hafta5/internalcss/internalcss.html">Internal Css</a></li>
+                        <li><a href="hafta5/externalcss/externalcss.html">External Css</a></li>
+                        <li><a href="hafta5/daireler/daireler.html">Daireler</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Hafta 7</strong>
+                    <ul>
+                        <li><a href="hafta7/center.html">Animasyon</a></li>
 
-  <div>
-    <div class="box">
-      <img id="img1" src="1.jpg" />
-    </div>
-    <div class="btns">
-      <button onclick="showImg('img1')">Göster</button>
-      <button onclick="hideImg('img1')">Gizle</button>
-    </div>
-  </div>
-
-  <div>
-    <div class="box">
-      <img id="img2" src="2.jpg" />
-    </div>
-    <div class="btns">
-      <button onclick="showImg('img2')">Göster</button>
-      <button onclick="hideImg('img2')">Gizle</button>
-    </div>
-  </div>
-
-  <div>
-    <div class="box">
-      <img id="img3" src="3.jpg" />
-    </div>
-    <div class="btns">
-      <button onclick="showImg('img3')">Göster</button>
-      <button onclick="hideImg('img3')">Gizle</button>
-    </div>
-  </div>
-
-</div>
-
-<script>
-
-  /* ---- 1) Body arka plan rastgele ---- */
-  function randomBg() {
-    const r = Math.floor(Math.random()*256);
-    const g = Math.floor(Math.random()*256);
-    const b = Math.floor(Math.random()*256);
-    document.body.style.background = `rgb(${r},${g},${b})`;
-  }
-
-  /* ---- 2) 10 resim içinden rastgele birini seç ---- */
-  const circleImages = [
-    "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg",
-    "9.jpg", "10.jpg", "11.jpg", "12.jpg", "13.jpg"
-  ];
-
-  function randomCircleImg() {
-    const pick = Math.floor(Math.random() * circleImages.length);
-    document.getElementById("circleImg").src = circleImages[pick];
-  }
-
-  /* ---- 3) Göster / Gizle fonksiyonları ---- */
-  function hideImg(id) {
-    document.getElementById(id).style.display = "none";
-  }
-
-  function showImg(id) {
-    document.getElementById(id).style.display = "block";
-  }
-
-  /* ---- Sayfa açılınca otomatik çalışsın ---- */
-  randomBg();
-  randomCircleImg();
-
-</script>
-
+                    </ul>
+                </li>
+                <li>
+                    <strong>Hafta 8</strong>
+                    <ul>
+                        <li><a href="hafta8/bootstrap.html">Bootstrap</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Hafta 9</strong>
+                    <ul>
+                        <li><a href="hafta9/js.html">Js</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Hafta 10</strong>
+                    <ul>
+                        <li><a href="hafta10/orjinal/index.html">Orjinal</a></li>
+                        <li><a href="hafta10/cakma/index.html">Benim</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </main>
 </body>
-</html>
 
+</html>
